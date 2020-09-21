@@ -1,4 +1,4 @@
-package ch02;
+package ch02.example;
 
 /**
  * 예제 2-2 | 변수, 리터럴, 상수 활용

@@ -1,4 +1,4 @@
-package ch02;
+package ch02.example;
 
 /**
  * 예제 2-8 | 조건 연산

@@ -1,4 +1,4 @@
-package ch02;
+package ch02.example;
 
 public class LogicalOperator {
     public static void main(String[] args) {

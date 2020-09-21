@@ -1,4 +1,4 @@
-package ch02;
+package ch02.example;
 
 /**
  * 예제 2-1 || 자바 프로그램의 기본 구조

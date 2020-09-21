@@ -1,4 +1,4 @@
-package ch02;
+package ch02.example;
 
 /**
  * 예제 2-6 | 대입 연산자와 증감 연산자 사용

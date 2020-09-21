@@ -1,4 +1,4 @@
-package ch02;
+package ch02.example;
 import java.util.Scanner;
 /**
  * 예제 2-4 | Scanner를 이용한 키 입력 연습
