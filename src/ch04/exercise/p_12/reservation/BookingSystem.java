@@ -89,8 +89,10 @@ public class BookingSystem {
      */
     void book() {
         int classChoice;                // 사용자가 선택한 좌석등급
+        String name;                    // 예약자 이름
+        int seatNumber;                 // 예약할 좌석 번호
 
-        while (true) {
+        LoopBook: while (true) {
             System.out.print("좌석 구분 S(1), A(2), B(3), 나가기(4) >> ");
             try {
                 classChoice = input.nextInt();              // 좌석 클래스 입력
@@ -103,19 +105,28 @@ public class BookingSystem {
                 continue;
             }
 
+
             input.nextLine();                       // 버퍼 비우기
             System.out.print("이름 >> ");
-            String name = input.nextLine();         // 이름 입력
-            System.out.print("번호 >> ");
-            int seatNumber = input.nextInt();       // 좌석 번호 입력
+            name = input.nextLine();         // 이름 입력
 
-            if (seats[classChoice - 1][seatNumber - 1].getP().getName().equals("___")) {
-                bookSeat(name, classChoice, seatNumber);
-                break;
-            }
-            else {
-                System.out.println("이미 예약된 좌석입니다.");
-                System.out.println("다른 좌석을 확인하세요!\n\n");
+            while (true) {
+                System.out.print("번호 >> ");
+                seatNumber = input.nextInt();       // 좌석 번호 입력
+
+                try {
+                    if (seats[classChoice - 1][seatNumber - 1].getP().getName().equals("___")) {
+                        bookSeat(name, classChoice, seatNumber);                // 이름, 좌석등급, 좌석번호를 통해 예약 시도
+                        break LoopBook;                                         // 예약 완료되면 '예약(book)' 메소드 종료
+                    }
+                    else {
+                        System.out.println("이미 예약된 좌석입니다.");
+                        System.out.println("다른 좌석을 확인하세요!\n\n");
+                    }
+                }
+                catch (ArrayIndexOutOfBoundsException e) {                      // 좌석번호에 없는 번호를 입력하면 오류 메세지 출력
+                    System.out.println("1 ~ 10 사이의 좌석번호를 입력하세요!");
+                }
             }
         }
     }
