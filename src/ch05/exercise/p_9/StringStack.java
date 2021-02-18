@@ -29,7 +29,8 @@ class StringStack implements Stack {
 
     /**
      * 가장 마지막에 push한 문자열을 pop 하는 메소드
-     * @return
+     *
+     * @return  pop한 문자열을 반환
      */
     @Override
     public String pop() {
