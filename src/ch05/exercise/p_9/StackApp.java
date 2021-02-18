@@ -32,5 +32,7 @@ public class StackApp {
             else
                 ss.push(str);
         }
+
+        input.close();
     }
 }
