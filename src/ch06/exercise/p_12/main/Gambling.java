@@ -32,6 +32,7 @@ public class Gambling {
         while (true) {
             if (play(users[idx])) {
                 System.out.println("\t" + users[idx].getName() + "님이 이겼습니다!");
+                scan.close();                       // Scanner 객체 닫기
                 break;
             }
             System.out.println("\t아쉽군요!");

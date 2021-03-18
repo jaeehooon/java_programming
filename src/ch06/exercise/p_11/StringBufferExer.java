@@ -38,6 +38,7 @@ public class StringBufferExer {
             command = scan.nextLine();                              // 명령어 입력
             if (command.equals("그만")) {
                 System.out.println("종료합니다.");
+                scan.close();                                       // Scanner 객체 닫기
                 break;
             }
 
