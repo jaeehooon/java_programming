@@ -17,19 +17,13 @@ class Nation {
     }
 
     /**
-     * 멤버 변수의 Getter, Setter 메소드
+     * 멤버 변수의 Getter 메소드
      */
     public String getCountry() {
         return country;
     }
-    public void setCountry(String name) {
-        this.country = name;
-    }
 
     public String getCapital() {
         return capital;
-    }
-    public void setCapital(String capital) {
-        this.capital = capital;
     }
 }
