@@ -10,7 +10,7 @@ public class FileReadHangulFail {
         FileInputStream fin = null;
 
         try {
-            fin = new FileInputStream("temp2.txt");         // 파일로부터 바이트 입력 스트림 생성
+            fin = new FileInputStream("src/inputTexts/temp2.txt");         // 파일로부터 바이트 입력 스트림 생성
 
             in = new InputStreamReader(fin, "US-ASCII");        // 문자 집합 지정이 잘못된 예를 보이기 위해 일부러 틀린 문자 집합 지정
 

@@ -13,7 +13,7 @@ public class FileReadHangulSuccess {
         InputStreamReader in = null;
         FileInputStream fin = null;
         try {
-            fin = new FileInputStream("temp2.txt");
+            fin = new FileInputStream("src/inputTexts/temp2.txt");
             in = new InputStreamReader(fin, StandardCharsets.UTF_8);               // 올바른 문자 집합 지정
             int c;
 
