@@ -11,7 +11,7 @@ public class FileWriterEx {
         FileWriter fout = null;
         int c;
         try {
-            fout = new FileWriter("src/inputTexts/temp3.txt");
+            fout = new FileWriter("src/inputs/temp3.txt");
             while (true) {
                 String line = scan.nextLine();              // 빈칸을 포함하여 한 줄 읽기
                 if (line.length() == 0)                     // 한 줄에 <Enter>키만 입력된 경우

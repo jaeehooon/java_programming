@@ -6,7 +6,7 @@ import java.io.*;
  */
 public class TextCopyEx {
     public static void main(String[] args) {
-        File src = new File("src/inputTexts/test3.txt");            // 원본 파일 경로명
+        File src = new File("src/inputs/test3.txt");            // 원본 파일 경로명
         File dest = new File("src/outputs/test3_copy.txt");         // 복사 파일 경로명
 
         int c;

@@ -10,7 +10,7 @@ public class BufferedIOEx {
         FileReader fin = null;
         int c;
         try {
-            fin = new FileReader("src/inputTexts/test2.txt");
+            fin = new FileReader("src/inputs/test2.txt");
             BufferedOutputStream out = new BufferedOutputStream(System.out, 5);
             while ((c = fin.read()) != -1) {                // 파일 데이터를 모두 스크린에  출력
                 out.write(c);
